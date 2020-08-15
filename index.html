@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Documentation Page</title>
+      <link rel="stylesheet" href="document.css">
+    
+    </head>
+    <body>
+        <nav id="sidebar">
+          <header>CSS Documentation</header>
+            <ul>
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#attributes">Attributes</a></li>
+              <li><a href="#headings">Headings</a></li>
+              <li><a href="#style">Style</a></li>
+              <li><a href="#formatting">Formatting</a></li>
+              <li><a href="#tables">Tables</a></li>
+              <li><a href="#lists">Lists</a></li>
+              <li><a href="#reference">Reference</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header>Introduction</header>
+                <p>HTML stands for Hyper Text Markup Language.
+                  HTML is the standard markup language for creating Web pages.
+                  HTML describes the structure of a Web page.
+                  HTML consists of a series of elements.
+                  HTML elements tell the browser how to display the content.
+                </p>
+                <p>An HTML element is defined by a start tag, some content, and an end tag:<br>
+
+                   &lttagname&gt Content goes here...&lt/tagname&gt
+                </p>   
+                <code>
+                  &lt!DOCTYPEhtml &gt
+                  </br>&lthtml&gt
+                  </br>&lthead&gt
+                  </br>&lttitle&gtPage Title&lt/title&gt
+                  </br>&lt/head&gt
+                  </br>&ltbody&gt
+                  </br>&lth1&gtMy First Heading&lt/h1&gt
+                  </br>&ltp&gtMy first paragraph.&lt/p&gt
+                  </br>&lt/body&gt
+                  </br>&lt/html&gt
+                </code      
+            </section>
+            <section class="main-section" id="attributes">
+               <header>Attributes</header>
+               <p>All HTML elements can have attributes.
+                  Attributes provide additional information about elements.
+                  Attributes are always specified in the start tag.
+                  Attributes usually come in name/value pairs like: <b>name="value"</b>
+               </p>  
+               <ul>
+                   <li>href - The &lta&gt tag defines a hyperlink.</li>
+                   <code>
+                      &lta href="https://www.w3schools.com"&gtVisit W3Schools&lt/a&gt
+                   </code>
+                   <li>src - The &ltimg&gt tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed.</li>
+                   <code>
+                      &ltimg src="img_girl.jpg"&gt
+                   </code>
+                   <li>alt - The required alt attribute for the &ltimg&gt tag specifies an alternate text for an image, if the image for some reason cannot be displayed.</li>
+                   <code>
+                      &ltimg src="img_girl.jpg" alt="Girl with a jacket"&gt
+                   </code>
+               </ul>
+           </section>
+           <section class="main-section" id="headings">
+               <header>Heading</header>
+               <p>HTML headings are titles or subtitles that you want to display on a webpage.
+                  HTML headings are defined with the &lth1&gt to &lth6&gt tags.
+                  &lth1&gt defines the most important heading. &lth6&gt defines the least important heading.
+                  Search engines use the headings to index the structure and content of your web pages.
+                  Users often skim a page by its headings. It is important to use headings to show the document structure.
+                   <code>
+                      &lth1&gtHeading 1&lt/h1&gt
+                      </br>&lth2&gtHeading 2&lt/h2&gt
+                      </br>&lth&gtHeading 3&lt/h3&gt
+                      </br>&lth4&gtHeading 4&lt/h4&gt
+                      </br>&lth5&gtHeading 5&lt/h5&gt
+                      </br>&lth6&gtHeading 6&lt/h6&gt
+                   </code>
+               </p>
+           </section>
+           <section class="main-section" id="style">
+               <header>Style</header>
+               <p>The HTML <b>style</b> attribute is used to add styles to an element, such as color, font, size, and more.
+                  Setting the style of an HTML element, can be done with the style attribute.
+                  The HTML style attribute has the following syntax:
+                  <code>
+                      &lttagname style="property:value;"&gt<br>
+                      The property is a CSS property. The value is a CSS value.
+                  </code>
+               </p>
+               <ul>
+                   <li>Background color - The CSS background-color property defines the background color for an HTML element.</li>
+                   <code>
+                       &ltbody style="background-color:powderblue;"&gt
+                       </br>&lth1&gtThis is a heading&lt/h1&gt
+                       </br>&ltp&gtThis is a paragraph.&lt/p&gt
+                       </br>&lt/body&gt
+                   </code>
+                   <li>Text color - The CSS color property defines the text color for an HTML element.</li>
+                   <code>
+                        &lth1 style="color:blue;"&gtThis is a heading&lt/h1&gt
+                   </code>
+                   <li>Font size - The CSS font-size property defines the text size for an HTML element.</li>
+                   <code>
+                        &lth1 style="font-size:300%;"&gtThis is a heading&lt/h1&gt
+                   </code>
+                   <li>Text Alignment - The CSS text-align property defines the horizontal text alignment for an HTML element</li>
+                   <code>
+                        &ltp style="text-align:center;"&gtCentered paragraph.&lt/p&gt
+                   </code>
+               </ul>
+           </section>
+           <section class="main-section" id="formatting">
+               <header>Formatting</header>
+               <p>HTML contains several elements for defining text with a special meaning.</p>
+               <ul>
+                  <li>&ltb&gt - Bold text</li>
+                  <li>&ltstrong&gt - Important text</li>
+                  <li>&lti&gt - Italic text</li>
+                  <li>&ltem&gt - Emphasized text</li>
+                  <li>&ltmark&gt - Marked text</li>
+                  <li>&ltsmall&gt - Smaller text</li>
+                  <li>&ltsub&gt - Subscript text</li>
+                  <li>&ltsup&gt - Superscript text</li>
+               </ul>
+               <code>
+                  &ltb&gtThis text is bold&lt/b&gt
+                  </br>&lti&gtThis text is italic&lt/i&gt
+                  </br>&ltsmall&gtThis text is small&lt/small&gt
+              </code>
+           </section>
+           <section class="main-section" id="tables">
+               <header>Tables</header>
+               <p>The &lttable&gt tag defines an HTML table.
+                   Each table row is defined with a &lttr&gt tag. 
+                   Each table header is defined with a &ltth&gt tag. Each table data/cell is defined with a &lttd&gt tag.
+                   By default, the text in &ltth&gt elements are bold and centered.
+                   By default, the text in &lttd&gt elements are regular and left-aligned.
+               </p>
+               <code>
+                   &lttable style="width:100%"&gt
+                   </br>&ltth&gtFirstname&lt/th&gt
+                   </br>&ltth&gtLastname&lt/th&gt
+                   </br>&lttr&gt
+                   </br>&lttr&gt
+                   </br>&lttd&gtJill&lt/td&gt
+                   </br>&lttd&gtSmith&lt/td&gt
+                   </br>&lttr&gt
+                   </br>&lttd&gtEve&lt/td&gt
+                   </br>&lttd&gtJackson&lt/td&gt
+                   </br>&lttr&gt
+                   </br>&lt/table&gt
+               </code>
+           </section>
+           <section class="main-section" id="lists">
+               <header>Lists</header>
+               <p>HTML lists allow web developers to group a set of related items in lists.</p>
+               <h4>Unordered Lists</h4>
+               <p>An unordered list starts with the &ltul&gt tag. Each list item starts with the &ltli&gt tag.
+                  The list items will be marked with bullets (small black circles) by default.
+               </p>
+               <code>
+                  &ltul&gt
+                  </br>&ltli&gtCoffee&lt/li&gt
+                  </br>&ltli&gtTea&lt/li&gt
+                  </br>&ltli&gtMilk&lt/li&gt
+                  </br>&lt/ul&gt
+               </code>
+               <h4>Ordered Lists</h4>
+               <p>An ordered list starts with the &ltol&gt tag. Each list item starts with the &ltli&gt tag.
+                  The list items will be marked with numbers by default.
+               </p>
+               <code>
+                  &ltol&gt
+                  </br>&ltli&gtCoffee&lt/li&gt
+                  </br>&ltli&gtTea&lt/li&gt
+                  </br>&ltli&gtMilk&lt/li&gt
+                  </br>&lt/ol&gt
+               </code>
+           </section>
+           <section class="main-section" id="reference">
+                <header>Reference</header>
+                <ul>
+                   <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/html/" targer="_blank">W3Schools</a></li>
+                </ul>
+           </section>
+        </main>
+    </body>
+</html>
+
+  
+  
+
+
+
+    
